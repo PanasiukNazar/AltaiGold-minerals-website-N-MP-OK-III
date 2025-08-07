@@ -227,6 +227,7 @@
                                             type="text"
                                             class="form-control bg-light border-0"
                                             id="name"
+                                            name="name"
                                             placeholder="Ваше имя"
                                             required
                                         />
@@ -239,6 +240,7 @@
                                             type="email"
                                             class="form-control bg-light border-0"
                                             id="email"
+                                            name="email"
                                             placeholder="Ваш email"
                                             required
                                         />
@@ -251,18 +253,51 @@
                                             type="text"
                                             class="form-control bg-light border-0"
                                             id="subject"
+                                            name="subject"
                                             placeholder="Тема"
                                             required
                                         />
                                         <label for="subject">Тема</label>
                                     </div>
                                 </div>
+
+                                <!-- New select field for issue category -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select bg-light border-0"
+                                            id="issue"
+                                            name="issue"
+                                            aria-label="Выберите тему вопроса"
+                                            required
+                                        >
+                                            <option value="" selected disabled>
+                                                Выберите тему вопроса
+                                            </option>
+                                            <option value="investment">
+                                                Вопрос об инвестициях
+                                            </option>
+                                            <option value="legal">
+                                                Юридические вопросы
+                                            </option>
+                                            <option value="risk_management">
+                                                Управление рисками
+                                            </option>
+                                            <option value="other">
+                                                Другое
+                                            </option>
+                                        </select>
+                                        <label for="issue">Тема вопроса</label>
+                                    </div>
+                                </div>
+
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <textarea
                                             class="form-control bg-light border-0"
                                             placeholder="Оставьте сообщение"
                                             id="message"
+                                            name="message"
                                             style="height: 100px"
                                             required
                                         ></textarea>
@@ -373,6 +408,20 @@
                                 </button>
                             </form>
                         </div>
+                    </div>
+                    <div>
+                        Информация, представленная на данном сайте и в блоге,
+                        носит исключительно информационный характер и не
+                        является инвестиционной, финансовой, юридической или
+                        иной профессиональной консультацией. Несмотря на все
+                        усилия по обеспечению точности и актуальности
+                        материалов, мы не даем гарантий относительно полноты,
+                        достоверности или надежности информации. Любые
+                        инвестиционные решения, принимаемые на основе материалов
+                        сайта, осуществляются на ваш собственный риск.
+                        Рекомендуется проконсультироваться с квалифицированными
+                        специалистами перед принятием каких-либо решений,
+                        связанных с инвестициями.
                     </div>
                 </div>
             </div>
